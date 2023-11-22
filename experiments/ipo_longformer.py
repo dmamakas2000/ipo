@@ -6,10 +6,15 @@ File: ipo_longformer.py
 Author: Dimitrios Mamakas (Athens University of Economics and Business)
 Date: November 22, 2023
 Description: Implementation of the following Longformer-based variants.
-                • ipo-longformer-extra-global-tx/txff-cls-8192
-                • ipo-longformer-extra-global-tx/txff-cls-20480
-                • ipo-longformer-tx/txff-cls-8192
-                • ipo-longformer-tx/txff-cls-8192
+
+                • ipo-longformer-extra-global-tx-cls-8192
+                • ipo-longformer-extra-global-txff-cls-8192
+                • ipo-longformer-extra-global-tx-cls-20480
+                • ipo-longformer-extra-global-txff-cls-20480
+                • ipo-longformer-tx-cls-8192
+                • ipo-longformer-txff-cls-8192
+                • ipo-longformer-tx-cls-8192
+                • ipo-longformer-txff-cls-8192
 
 
 License:
