@@ -1,3 +1,16 @@
+"""
+File: ipo_longformer.py
+Author: Dimitrios Mamakas (Athens University of Economics and Business)
+Date: November 22, 2023
+Description: Implementation of the essential functions used across this project.
+
+
+License:
+This code is provided under the MIT License.
+You are free to copy, modify, and distribute the code.
+If you use this code in your research, please include a reference to the original study (please visit the home page).
+"""
+
 import os
 import sys
 import glob

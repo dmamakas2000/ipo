@@ -1,6 +1,28 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+"""
+File: ipo.py
+Author: Dimitrios Mamakas (Athens University of Economics and Business)
+Date: November 22, 2023
+Description: Implementation of the following BERT-based and Hierarchical-BERT-based variants.
+
+                • bert-tx-cls-512
+                • bert-txff-cls-512
+                • bert-tx-max-512
+                • bert-txff-max-512
+                • hierbert-tx-cls-8192
+                • hierbert-txff-cls-8192
+                • hierbert-tx-cls-20480
+                • hierbert-txff-cls-20480
+
+     
+License:
+This code is provided under the MIT License.
+You are free to copy, modify, and distribute the code.
+If you use this code in your research, please include a reference to the original study (please visit the home page).
+"""
+
 import os
 import sys
 import glob
