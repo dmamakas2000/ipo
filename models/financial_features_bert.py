@@ -1,3 +1,16 @@
+"""
+File: financial_features_bert.py
+Author: Dimitrios Mamakas (Athens University of Economics and Business)
+Date: November 23, 2023
+Description: Implementation of bert-txff-cls-512.
+
+
+License:
+This code is provided under the MIT License.
+You are free to copy, modify, and distribute the code.
+If you use this code in your research, please include a reference to the original study (please visit the home page).
+"""
+
 import torch
 import logging
 from torch import nn

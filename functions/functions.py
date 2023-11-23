@@ -1,5 +1,5 @@
 """
-File: ipo_longformer.py
+File: functions.py
 Author: Dimitrios Mamakas (Athens University of Economics and Business)
 Date: November 22, 2023
 Description: Implementation of the essential functions used across this project.

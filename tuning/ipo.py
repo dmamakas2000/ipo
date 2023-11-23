@@ -1,5 +1,19 @@
 #!/usr/bin/env python
 # coding=utf-8
+
+"""
+File: ipo_longformer.py
+Author: Dimitrios Mamakas (Athens University of Economics and Business)
+Date: November 23, 2023
+Description: Implementation of the tuning strategy followed for BERT-based & Hierarchical-BERT-based variants.
+
+
+License:
+This code is provided under the MIT License.
+You are free to copy, modify, and distribute the code.
+If you use this code in your research, please include a reference to the original study (please visit the home page).
+"""
+
 import os
 import json
 import optuna

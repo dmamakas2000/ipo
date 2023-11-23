@@ -1,3 +1,18 @@
+"""
+File: financial_features_hierarchical_bert.py
+Author: Dimitrios Mamakas (Athens University of Economics and Business)
+Date: November 23, 2023
+Description: Implementation of the following Hierarchical-BERT variants
+                • hierbert-txff-cls-8192
+                • hierbert-txff-cls-20480
+
+
+License:
+This code is provided under the MIT License.
+You are free to copy, modify, and distribute the code.
+If you use this code in your research, please include a reference to the original study (please visit the home page).
+"""
+
 import torch
 from torch import nn
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
