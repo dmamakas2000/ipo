@@ -1,4 +1,4 @@
-# Deep Learning Models for Corporate Event Prediction: Using Text and Financial Indicators :dollar:
+# Deep Learning Models for Corporate Event Prediction: Using Text and Financial Indicators :dollar: :bank: :chart_with_upwards_trend:
 
 ## About
 This repository hosts the implementation of my M.Sc. thesis, which leverages advanced NLP techniques, including pre-trained Transformers, to predict IPO underpricing and overpricing. By analyzing extensive S-1 filings (up to 20,480 tokens) alongside financial indicators, this study outperforms traditional ML methods, addressing the challenges of long-document processing in financial text classification.
