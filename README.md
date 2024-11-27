@@ -23,7 +23,7 @@ To evaluate the performance of our implemented models, we experiment using a col
 We evaluate the performance of our modes using key metrics such as Precision, Recall, F1-score per class, PR-AUC (Precision-Recall Area Under Curve), and macro-averaging. PR-AUC. Learning curves are also provided to validate findings and ensure no overfitting occurs. Each experiment runs with five random seeds, selecting the seed with the highest PR-AUC score achieved across the development set. The training set is balanced via undersampling to address the minority class (overpriced IPOs). While experiments were conducted with balanced and imbalanced training sets, only the best-performing models are presented in the results, with a note on which training approach was used.
 
 ### Experimental results
-The following table compares the best experiments from each family of models with the optimal baseline that uses pure financial indicators to classify IPOs (and achieved the highest macro-averaged PR-AUC score across all the baseline sections). Details regarding the experimental results of each model are analyzed in the equivalent section of the final report.
+The following table compares the best experiments from each family of models with the optimal baseline that uses pure financial indicators to classify IPOs (and achieved the highest macro-averaged PR-AUC score across all the baseline sections). We show the results across the development and test sets (dev/test). Details regarding the experimental results of each model are analyzed in the equivalent section of the final report.
 
 |                            |   **Baseline**  |     **BERT**    |  **Hier-BERT**  |    **Longformer**   |
 |----------------------------|:---------------:|:---------------:|:---------------:|:-------------------:|
@@ -48,4 +48,20 @@ Finally, we refer to the training requirements by displaying the training runtim
 | **_Train Runtime (sec.)_** |      26      |  165.58  |        1541.21        |     3104.44    |
 | **_Train Samples/sec._**   |       -      |   43.00  |          4.62         |      2.29      |
 | **_Train Steps/sec_**      |       -      |   1.75   |          1.16         |      0.77      |
+
 ## Frequently Asked Questions (FAQ)
+
+### How to run experiments?
+For any UNIX server, please follow these steps:
+
+1. Clone the repository using `git clone https://github.com/dmamakas2000/ipo`.
+
+1. Move into the desired directory representing the experiment you want to execute. For example, type `cd scripts/management/`
+
+1. Export the Pythonpath using `export PYTHONPATH="${PYTHONPATH}:/your_directory_to_project/"`.
+
+1. Open the corresponding file and edit the configurations based on your needs.
+
+1. Make the bash script executable using `chmod`. For example, `chmod +x bert_management.sh`.
+
+1. Execute the bash script. For example, `./bert_management.sh`.
