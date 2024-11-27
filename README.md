@@ -2,3 +2,11 @@
 
 ## Abstract
 During the past decades, Initial Public Offerings (IPOs) evolved into an irreplaceable tool for companies to raise capital. Generally, IPOs describe the procedure of offering private corporative shares to the primary market, thus attracting institutional and individual investors to purchase them. Afterward, the securities become available in the secondary market and are easily traded by individuals. Typically, when U.S. firms go public, they follow an explicit procedure. Specifically, the U.S. Securities and Exchange Commission (SEC) requires the submission of the S-1 filing document (also referred to as IPO prospectus) to the Electronic Data Gathering, Analysis, and Retrieval (EDGAR) system. This clause ensures investors have prior knowledge of the issuing company’s valuation, potential risks, or future business plans. Hence, IPO underpricing received considerable attention through the years by triggering economists and financial experts. Overall, underpricing denotes offering an IPO at a price lower than its entered value on the stock market after the first trading day. The opposite scenario indicates IPO overpricing. To investigate these phenomena, previous work applied conventional Machine Learning (ML) techniques that use features retrieved from the S-1 fillings or specific financial indications to classify IPOs. However, measuring the predictive power of the prospectuses becomes a complicated task because of the imposition of processing limitations due to their large document size, as they contain a considerably high number of words, making them hard to process and analyze. Therefore, in this study, we go beyond previous approaches and investigate the predictive power of IPOs by utilizing pre-trained Transformers. To detect underpricing, we use textual information retrieved from S-1 fillings along with specific economic knowledge coming from certain financial indicators. We introduce a collection of models that process texts of up to 20,480 tokens, thus making them a reliable option for facing the needs of this classification task. Finally, the findings indicate that our methods outperform previous ML approaches in most experiments and encourage further investigation in this field.
+
+### Models
+
+## Dataset
+
+## Experiments
+
+## Frequently Asked Questions (FAQ)
