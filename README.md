@@ -20,7 +20,32 @@ During the past decades, Initial Public Offerings (IPOs) evolved into an irrepla
 To evaluate the performance of our implemented models, we experiment using a collection of large S-1 documents. For our analysis, we extract four major sections from each filing, named as follows: (1) Summary, (2) Risk Factors, (3) Use of Proceeds, and (4) Management Discussion and Analysis. Despite the information obtained from analyzing S-1 documents, we additionally focus on evaluating certain variables containing vital financial knowledge regarding the IPO firms’ valuation.
 
 ## Experiments
+We evaluate the performance of our modes using key metrics such as Precision, Recall, F1-score per class, PR-AUC (Precision-Recall Area Under Curve), and macro-averaging. PR-AUC. Learning curves are also provided to validate findings and ensure no overfitting occurs. Each experiment runs with five random seeds, selecting the seed with the highest PR-AUC score achieved across the development set. The training set is balanced via undersampling to address the minority class (overpriced IPOs). While experiments were conducted with balanced and imbalanced training sets, only the best-performing models are presented in the results, with a note on which training approach was used.
 
 ### Experimental results
+The following table compares the best experiments from each family of models with the optimal baseline that uses pure financial indicators to classify IPOs (and achieved the highest macro-averaged PR-AUC score across all the baseline sections). Details regarding the experimental results of each model are analyzed in the equivalent section of the final report.
 
+|                            |   **Baseline**  |     **BERT**    |  **Hier-BERT**  |    **Longformer**   |
+|----------------------------|:---------------:|:---------------:|:---------------:|:-------------------:|
+| **_Precision (Class 0)_**  | 70.48% / 77.54% | 77.43% / 75.29% | 82.07% / 77.70% | 78.60% / 79.29%     |
+| **_Recall (Class 0)_**     | 79.21% / 74.21% | 91.57% / 51.37% | 91.29% / 45.10% | 94.94% / 43.53%     |
+| **_Precision (Class 1)_**  | 76.27% / 44.79% | 89.69% / 37.69% | 90.19% / 37.78% | 93.62% / 38.20%     |
+| **_Recall (Class 1)_**     | 66.82% / 49.32% | 73.31% / 63.56% | 80.06% / 72.03% | 74.16% / 75.42%     |
+| **_PR-AUC (Class 0)_**     | 69.76% / 75.91% | 91.93% / 75.16% | 86.65% / 74.25% | 82.34% / 79.93%     |
+| **_PR-AUC (Class 1)_**     | 79.84% / 43.98% | 88.80% / 44.40% | 88.73% / 39.86% | 90.45% / 44.54%     |
+| **_F1 (Class 0)_**         | 74.59% / 75.84% | 83.91% / 61.07% | 86.44% / 57.07% | 86.01% / 56.20%     |
+| **_F1 (Class 1)_**         | 71.23% / 46.95% | 80.68% / 47.32% | 84.82% / 49.56% | 82.76% / 50.71%     |
+| **_Macro-avg. Precision_** | 73.37% / 61.17% | 83.56% / 56.49% | 86.13% / 57.74% | 86.11% / 58.74%     |
+| **_Macro-avg. Recall_**    | 73.01% / 61.77% | 82.44% / 57.47% | 85.67% / 58.57% | 84.55% / 59.48%     |
+| **_Macro-avg. PR-AUC_**    | 74.80% / 59.94% | 90.36% / 59.78% | 87.69% / 57.06% | **86.40% / 62.23%** |
+| **_Macro-avg. F1_**        | 72.91% / 61.39% | 82.30% / 54.20% | 85.63% / 53.32% | 84.38% / 53.46%     |
+
+Finally, we refer to the training requirements by displaying the training runtime, samples per second, and steps per second in the following table. However, we exclude two measurements for the baseline model, as they were not counted during the experimentation process.
+
+|                            |              |          |                       |                |
+|----------------------------|:------------:|:--------:|:---------------------:|:--------------:|
+|                            | **Baseline** | **BERT** | **Hier-BERT** | **Longformer** |
+| **_Train Runtime (sec.)_** |      26      |  165.58  |        1541.21        |     3104.44    |
+| **_Train Samples/sec._**   |       -      |   43.00  |          4.62         |      2.29      |
+| **_Train Steps/sec_**      |       -      |   1.75   |          1.16         |      0.77      |
 ## Frequently Asked Questions (FAQ)
