@@ -70,3 +70,6 @@ For any UNIX server, please follow these steps:
 1. Make the bash script executable using `chmod`. For example, `chmod +x bert_management.sh`.
 
 1. Execute the bash script. For example, `./bert_management.sh`.
+
+## License
+This project is licensed under the **MIT License** - see the **[LICENSE](LICENSE)** file for details.
